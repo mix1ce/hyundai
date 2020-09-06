@@ -419,7 +419,7 @@ body {
 
 .premiere__timer {
   min-height: 734px;
-  background: url("../img/timer-bg.jpg") center no-repeat;
+  background: url("../img/timer-bg.jpg") center 0 no-repeat;
 }
 
 .timer {
@@ -721,7 +721,39 @@ body {
   }
 
   .premiere {
-    display: none;
+    padding: 70px 0;
+  }
+
+  .premiere__timer {
+    background-size: contain;
+    background-position: 0 123px;
+    min-height: 500px;
+  }
+
+  .timer {
+    font-size: 50px;
+    margin-top: -20px;
+  }
+
+  .timer div:nth-child(n) {
+    padding: 0 20px 0 10px;
+  }
+
+  .text-premiere__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .text-premiere__link {
+    margin: 0 0 10px 0;
   }
 
   .exterior {
@@ -755,6 +787,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .premiere__timer {
+    min-height: 340px;
+  }
+
   .interior__slider-top .image-slider {
     width: 320px;
   }

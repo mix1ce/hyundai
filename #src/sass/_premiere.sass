@@ -2,14 +2,14 @@
   padding-top: 90px
   padding-bottom: 110px
   background-color: $text-color-dark
-
   @media(max-width: 768px)
-    display: none
+    padding: 70px 0
 
   // .premiere__title
   &__title
     color: $text-color-light
     text-align: center
+
     // .premiere__title-bottom
     &-bottom
       background: linear-gradient(45deg, #80059F, #FE7139), linear-gradient(-45deg, #E4072A, #FE7139)
@@ -20,13 +20,15 @@
   // .premiere__timer
   &__timer
     min-height: 734px
-    background: url('../img/timer-bg.jpg')center no-repeat
+    background: url('../img/timer-bg.jpg') center 0 no-repeat
 
-  // .premiere__text
-  &__text
+    @media(max-width: 768px)
+      background-size: contain
+      background-position: 0 123px
+      min-height: 500px
 
-
-
+    @media(max-width: 480px)
+      min-height: 340px
 
 .timer
   display: flex
@@ -37,9 +39,16 @@
   font-weight: 700
   color: $text-color-light
 
+  @media(max-width: 768px)
+    font-size: 50px
+    margin-top: -20px
+
   div:nth-child(n)
     position: relative
     padding: 0 37px
+
+    @media(max-width: 768px)
+      padding: 0 20px 0 10px
 
     &::after
       content: ''
@@ -84,12 +93,18 @@
 
 
 .text-premiere
+
   // .text-premiere__row
   &__row
     font-size: 24px
     line-height: 30px
     text-align: center
     color: $text-color-light
+
+    @media(max-width: 768px)
+      display: flex
+      flex-direction: column
+      align-items: center
 
     span
       color: #7E8183
@@ -100,3 +115,6 @@
     margin-left: 60px
     color: $text-color-light
     border-bottom: 2px solid #1385B7
+
+    @media(max-width: 768px)
+      margin: 0 0 10px 0
