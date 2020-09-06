@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
+  <title>Document</title>
+
+  <link href="css/libs.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include('_header.html')
+
+  <section class="hero">
+    <video id="video" autoplay muted loop="loop" poster="img/hero.jpg">
+      <source src="video/main.mp4" type="video/mp4">
+      </source>
+    </video>
+    <div class="hero__text">
+      <div class="container container__big">
+        <div class="hero__title title">Hyundai Azera</div>
+        <div class="hero__subtitle subtitle">Redefine success.</div>
+      </div>
+    </div>
+    <!-- /.hero__text -->
+
+    <div class="hero__sticker sticker">
+      <div class="sticker__name">Azera 2020</div>
+      <div class="sticker__price">S.R <span>1,699</span></div>
+      <div class="">Monthly</div>
+    </div>
+    <!-- /.hero__sticker -->
+    <div class="hero__callback">
+      <img src="img/icons/icons.svg#callback" alt="">
+    </div>
+    <!-- /.hero__callback -->
+  </section>
+
+  <section class="main-form">
+    <div class="container container__big">
+      <form class="main-form__form" action="send.php" method="post">
+        <input type="text" name="first-name" required placeholder="First name" id="">
+        <input type="text" name="last-name" required placeholder="Last name" id="">
+        <input type="email" name="email" required placeholder="Email" id="">
+        <input type="tel" name="mobile" required placeholder="Mobile" id="">
+        <select name="location" required>
+          <option value="" disabled selected class="location">Location</option>
+          <option value="Russia">Russia</option>
+          <option value="USA">USA</option>
+        </select>
+        <input type="submit" name="submit" value="Request">
+      </form>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container container__big">
+      <div class="features__row">
+        <div class="features__item">0% admin fee</div>
+        <div class="features__item">5 years / 100,000 Km Manufacturer Warranty</div>
+        <!-- /.features__item -->
+      </div>
+      <!-- /.features__row -->
+      <div class="features__row">
+        <div class="features__item">Comprehensive insurance covering the entire lease period</div>
+        <div class="features__item">1 year Road Side Assistance</div>
+        <!-- /.features__item -->
+      </div>
+      <!-- /.features__row -->
+
+      <div class="features__row">
+        <div class="features__item">Terms and conditions applicable as per the leasing company</div>
+        <div class="features__item">The monthly installment advertised includes Value Added Tax</div>
+        <!-- /.features__item -->
+      </div>
+      <!-- /.features__row -->
+
+    </div>
+  </section>
+
+  <section class="premiere">
+    <div class="container">
+      <div class="premiere__title title">The all-new Azera
+        World Premiere </div>
+      <div class="premiere__title premiere__title-bottom title">Live from Dubai</div>
+      <div class="premiere__timer timer">
+        <div class="timer__days">20</div>
+        <div class="timer__hours">18</div>
+        <div class="timer__min">24</div>
+        <div class="timer__sec">31</div>
+      </div>
+      <!-- /.premiere__timer -->
+
+      <div class="premiere__text text-premiere">
+        <div class="text-premiere__row">Watch the world premiere event livestream held on April 17, 2020.</div>
+        <div class="text-premiere__row">
+          <span>Via official accounts:</span>
+          <a href="https://www.youtube.com/" class="text-premiere__link">youtube</a>
+          <a href="https://www.facebook.com/" class="text-premiere__link">facebook</a>
+          <a href="https://www.instagram.com/explore/tags/instalive/" class="text-premiere__link">instalive</a>
+        </div>
+      </div>
+      <!-- /.premiere__text -->
+    </div>
+  </section>
+
+  <section class="exterior">
+    <div class="exterior__title title">Exterior</div>
+    <div class="exterior__subtitle subtitle">The forward-looking front features the 'Sensures Sporty' design
+      directionality and captures a new design vision, from the sleek, sporty side to the rear with a wide rear lamp.
+    </div>
+
+    <div class="swiper-container exterior-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide exterior-slide"><img src="img/exterior-1.jpg" alt=""></div>
+        <div class="swiper-slide exterior-slide"><img src="img/exterior-2.jpg" alt=""></div>
+
+        <div class="swiper-slide exterior-slide"><img src="img/exterior-1.jpg" alt=""></div>
+        <div class="swiper-slide exterior-slide"><img src="img/exterior-2.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="swiper-scrollbar exterior-scrollbar"></div>
+
+  </section>
+
+  <section class="interior">
+    <div class="container">
+      <div class="interior__title title">Relaxation as a comfortable living space</div>
+      <div class="interior__subtitle subtitle">In the interior, a 64-color ambient mood lamp is applied to the floating
+        garnish and the silver garnish of the lower crash pad to add comfort to the passengers.</div>
+    </div>
+    <div class="interior__slider-top">
+      <div class="image-slider">
+        <div><img src="img/interior/interior-1.jpg"></div>
+        <img src="img/interior/interior-2.jpg">
+      </div>
+    </div>
+
+  </section>
+
+  @@include('_footer.html')
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

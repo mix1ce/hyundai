@@ -1,0 +1,102 @@
+.premiere
+  padding-top: 90px
+  padding-bottom: 110px
+  background-color: $text-color-dark
+
+  @media(max-width: 768px)
+    display: none
+
+  // .premiere__title
+  &__title
+    color: $text-color-light
+    text-align: center
+    // .premiere__title-bottom
+    &-bottom
+      background: linear-gradient(45deg, #80059F, #FE7139), linear-gradient(-45deg, #E4072A, #FE7139)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+
+  // .premiere__timer
+  &__timer
+    min-height: 734px
+    background: url('../img/timer-bg.jpg')center no-repeat
+
+  // .premiere__text
+  &__text
+
+
+
+
+.timer
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  padding-top: 75px
+  font-size: 86px
+  font-weight: 700
+  color: $text-color-light
+
+  div:nth-child(n)
+    position: relative
+    padding: 0 37px
+
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 0
+      width: 11px
+      height: 43px
+      transform: translateY(-50%)
+      background: url('../img/icons/icons.svg#colon') center/200% no-repeat
+
+    &::before
+      position: absolute
+      bottom: -50px
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 18px
+      font-weight: 400
+      color: rgba($bg-color-light, 0.5)
+
+  // .timer__day
+  &__days
+    &::before
+      content: 'days'
+
+  // .timer__hours
+  &__hours
+    &::before
+      content: 'hours'
+
+  // .timer__min
+  &__min
+    &::before
+      content: 'min'
+
+  // .timer__sec
+  &__sec
+    &::before
+      content: 'sec'
+    &::after
+      display: none
+
+
+.text-premiere
+  // .text-premiere__row
+  &__row
+    font-size: 24px
+    line-height: 30px
+    text-align: center
+    color: $text-color-light
+
+    span
+      color: #7E8183
+      line-height: 62px
+
+  // .text-premiere__link
+  &__link
+    margin-left: 60px
+    color: $text-color-light
+    border-bottom: 2px solid #1385B7

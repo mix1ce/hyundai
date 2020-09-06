@@ -1,0 +1,87 @@
+.hero
+  position: relative
+  background-color: $active-color
+
+  video
+    min-width: 100%
+    min-height: 320px
+    width: 100%
+    height: auto
+    object-fit: cover
+
+
+  // .hero__text
+  &__text
+    position: absolute
+    top: 30px
+    width: 100%
+    color: $text-color-light
+
+  // .hero__title
+  &__title
+    padding-bottom: 8px
+
+
+  // .hero__subtitle
+  &__subtitle
+
+  // .hero__sticker
+  &__sticker
+
+  // .hero__callback
+  &__callback
+    position: absolute
+    bottom: 80px
+    right: 80px
+    padding: 11px 14px 11px 20px
+    background-color: #127EB2
+    border-radius: 100px
+
+    img
+      width: 29px
+      height: auto
+
+
+    @media(max-width: 768px)
+      display: none
+
+
+.sticker
+  position: absolute
+  bottom: 80px
+  padding: 15px
+  font-size: 14px
+  line-height: 21px
+  background-color: $active-color
+  color: $text-color-light
+
+  @media(max-width: 768px)
+    font-size: 12px
+    padding-bottom: 0
+
+  // .sticker__name
+  &__name
+    font-weight: 500
+    font-size: 18px
+    line-height: 23px
+
+    @media(max-width: 768px)
+      font-size: 14px
+      line-height: 18px
+
+
+  // .sticker__price
+  &__price
+    span
+      font-weight: 500
+      font-size: 26px
+      line-height: 33px
+
+      @media(max-width: 768px)
+        font-size: 24px
+        line-height: 30px
+
+
+  @media(max-width: 768px)
+    position: static
+    text-align: center

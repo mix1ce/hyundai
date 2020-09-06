@@ -1,0 +1,43 @@
+.main-form
+  padding: 30px 0
+  background-color: $active-color
+  // .main-form__form
+  &__form
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    @media(max-width: 768px)
+      flex-direction: column
+      align-items: inherit
+
+    input:nth-child(1)
+      @media(max-width: 768px)
+        margin-top: 0
+
+    input, select
+      color: $text-color-light
+      background-color: $active-color
+      padding-bottom: 10px
+      border-bottom: 1px solid rgba(#ffffff, 0.1)
+      font-size: 16px
+      line-height: 21px
+      @media(max-width: 768px)
+        margin-top: 30px
+
+    input::placeholder
+      color: $text-color-light
+      font-size: 16px
+      line-height: 21px
+
+    select
+      padding-right: 120px
+      appearance: none
+      background: $active-color url('../img/icons/arrow.png') right center no-repeat
+
+    input[type=submit]
+      padding: 15px 40px
+      color: $active-color
+      background-color: $bg-color-light
+
+.location
+  display: none

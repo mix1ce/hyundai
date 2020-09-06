@@ -1,0 +1,84 @@
+.interior
+  padding: 100px 0
+  background-color: $bg-color-grey
+
+  @media(max-width: 768px)
+    padding: 55px 0
+
+
+  // .interior__title
+  &__title
+    margin-bottom: 10px
+    text-align: center
+
+  // .interior__subtitle
+  &__subtitle
+    max-width: 760px
+    margin: 0 auto 50px
+    text-align: center
+
+
+
+.interior__slider-top
+  width: 100%
+  display: flex
+  justify-content: center
+
+  .image-slider
+    position: relative
+    display: inline-block
+    overflow: hidden
+    @media(max-width: 1080px)
+      width: 768px
+    @media(max-width: 768px)
+      width: 480px
+    @media(max-width: 480px)
+      width: 320px
+
+
+    div
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      width: 50%
+      overflow: hidden
+      max-width: 100%
+
+      img
+        @media(max-width: 1080px)
+          width: 768px
+        @media(max-width: 768px)
+          width: 480px
+        @media(max-width: 480px)
+          width: 320px
+
+    input[type='range']
+      position: absolute
+      top: 50%
+      width: 100%
+      margin: 0
+      transform: translateY(-50%)
+      overflow: hidden
+      -webkit-appearance: none
+      background-color: transparent
+
+      &::-webkit-slider-thumb
+        width: 64px
+        -webkit-appearance: none
+        height: 64px
+        cursor: ew-resize
+        background: $active-color url('../img/icons/slider.png') center no-repeat
+        border-radius: 100%
+
+        @media(max-width: 768px)
+          width: 50px
+          height: 50px
+        @media(max-width: 480px)
+          width: 40px
+          height: 40px
+
+  .image-slider > img
+    display: block
+    user-select: none
+    max-width: 100%
