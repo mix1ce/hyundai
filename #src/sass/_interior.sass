@@ -56,12 +56,25 @@
     input[type='range']
       position: absolute
       top: 50%
-      width: 100%
+      left: -3%
+      width: 106%
       margin: 0
       transform: translateY(-50%)
       overflow: hidden
       -webkit-appearance: none
       background-color: transparent
+
+      @media(max-width: 1080px)
+        left: -4%
+        width: 108%
+
+      @media(max-width: 768px)
+        left: -5%
+        width: 110%
+
+      @media(max-width: 480px)
+        left: -6%
+        width: 112%
 
       &::-webkit-slider-thumb
         width: 64px
