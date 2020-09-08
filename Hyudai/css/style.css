@@ -623,6 +623,20 @@ body {
   max-width: 100%;
 }
 
+.footer {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #032D5D;
+}
+
+.footer__logo {
+  margin-bottom: 25px;
+}
+
+.footer__text {
+  color: #ffffff;
+}
+
 @media (max-width: 1080px) {
   .interior__slider-top .image-slider {
     width: 768px;
